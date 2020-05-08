@@ -22,7 +22,6 @@ export default class PlantList extends Component {
       res.data.plantsData.forEach(plant => {
       this.setState({ plants: [ ...this.state.plants, plant ] })
       })
-      console.log(this.state.plants)
     })
     .catch(err => {
       console.log(err)
